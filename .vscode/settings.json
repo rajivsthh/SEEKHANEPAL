@@ -1,0 +1,12 @@
+{
+  // Ignore unknown at-rules (Tailwind / PostCSS specific directives are validated by the build tools)
+  "css.lint.unknownAtRules": "ignore",
+  "scss.lint.unknownAtRules": "ignore",
+  "less.lint.unknownAtRules": "ignore",
+
+  // Tell the Tailwind extension where to find your config (if present)
+  "tailwindCSS.experimental.configFile": "tailwind.config.js",
+
+  // Helpful: enable quick suggestions inside strings (useful when typing class names)
+  "editor.quickSuggestions": { "strings": true }
+}

@@ -1,6 +1,7 @@
 "use client"
 import { useState } from "react"
 import type React from "react"
+import { Container } from "@/components/ui/container"
 
 import { Upload } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -17,8 +18,10 @@ export function LogoSection() {
   }
 
   return (
-    <section className="px-6 py-12 max-w-4xl mx-auto text-center">
-      <div className="mb-8">
+    // full-bleed section with centered content via Container
+    <section className="py-12 w-full text-center">
+      <Container>
+        <div className="mb-8">
         <div className="relative group">
           {logoUrl ? (
             <img
@@ -41,8 +44,8 @@ export function LogoSection() {
           </div>
         </div>
 
-        <h1 className="text-3xl md:text-4xl font-bold text-blue-400">Hello Rajiv Shrestha</h1>
-        <p className="text-2xl gray-400 mt-2">"आफ्नो रुचि आफै खोजौं।"</p>
+  <h1 className="text-3xl md:text-4xl font-bold text-blue-400">Hello Rajiv Shrestha</h1>
+  <p className="text-2xl gray-400 mt-2">"आफ्नो रुचि आफै खोजौं।"</p>
 
         {/* {!logoUrl && (
           <Button
@@ -54,7 +57,8 @@ export function LogoSection() {
             Upload Your Logo
           </Button>
         )} */}
-      </div>
+        </div>
+      </Container>
     </section>
   )
 }

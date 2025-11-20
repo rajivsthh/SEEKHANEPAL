@@ -90,8 +90,9 @@ export function ChatBot() {
     setIsLoading(false)
   }
 
+  // chat card centered by parent Container; constrain card width for readability
   return (
-    <Card className="bg-gray-800 border-gray-700 p-6 max-w-2xl mx-auto">
+    <Card className="bg-gray-800 border-gray-700 p-6 max-w-2xl mx-auto w-full">
       <div className="flex items-center gap-3 mb-6">
         <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center">
           <Bot className="w-6 h-6 text-white" />

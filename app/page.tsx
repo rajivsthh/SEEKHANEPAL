@@ -42,12 +42,7 @@ export default function HomePage() {
         </Container>
       </section>
 
-      <LogoSection />
-
-      {/* Chatbot Section (full width) */}
-      <section className="px-6 py-8 w-full">
-        <ChatBot />
-      </section>
+      {/* (removed duplicate LogoSection and ChatBot) */}
     </div>
   )
 }

@@ -5,6 +5,14 @@ export async function POST(req: Request) {
   try {
     const { message, availableCourses } = await req.json()
 
+    // Check if API key is configured
+    if (!process.env.GOOGLE_GENERATIVE_AI_API_KEY) {
+      return Response.json({
+        message:
+          "Welcome to SeekhNepal! 🎓 Our AI chatbot is currently being configured. In the meantime, please explore our course catalog in the Explore section or contact us via the About page for personalized guidance!",
+      })
+    }
+
     const { text } = await generateText({
       model: google("gemini-2.0-flash"),
       system: `You are a career guidance assistant for SeekhNepal, an educational platform. 

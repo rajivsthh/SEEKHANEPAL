@@ -8,5 +8,12 @@
   "tailwindCSS.experimental.configFile": "tailwind.config.js",
 
   // Helpful: enable quick suggestions inside strings (useful when typing class names)
-  "editor.quickSuggestions": { "strings": true }
+  "editor.quickSuggestions": { "strings": true },
+
+  // Disable TypeScript validation since dependencies aren't installed locally
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.validate.enable": false,
+  "javascript.validate.enable": false
 }

@@ -1,7 +1,6 @@
 "use client"
 import { AuthDialog } from "@/components/auth-dialog"
 import { ChatBot } from "@/components/chatbot"
-import { LogoSection } from "@/components/logo-section"
 import { Container } from "@/components/ui/container"
 import Link from "next/link"
 
@@ -33,16 +32,12 @@ export default function HomePage() {
         </Container>
       </nav>
 
-      <LogoSection />
-
       {/* Chatbot Section (content centered inside container) */}
-      <section className="w-full py-8">
+      <section className="w-full py-12">
         <Container>
           <ChatBot />
         </Container>
       </section>
-
-      {/* (removed duplicate LogoSection and ChatBot) */}
     </div>
   )
 }

@@ -25,15 +25,7 @@ export default function AboutPage() {
       {/* Navigation */}
       <nav className="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto border-b border-gray-800">
         <Link href="/" className="text-2xl font-bold text-blue-400">
-          
-       <div className="flex justify-end max-w-4xl mx-auto mb-8">
-  <img
-    src="logo.png"
-    alt="Logo"
-    className="w-32 h-auto opacity-80 object-contain transition-transform duration-300 hover:scale-110"
-  />
-</div>
-
+          سيكNEPAL
         </Link>
         <div className="flex items-center gap-6">
           <Link href="/" className="text-gray-300 hover:text-white transition-colors">
